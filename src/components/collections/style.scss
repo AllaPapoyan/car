@@ -1,0 +1,121 @@
+@import "../../assets/style/variabless";
+@import "../../assets/style/fonts";
+@import "../../assets/style/mixin";
+
+.section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    padding-top: 100px;
+
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    @include screen-max-width-1200{
+        width: 90%;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+      }
+    
+
+}
+
+.btn0 {
+    padding: 10px 30px;
+    margin: 20px 10px;
+    background-color: #fff;
+    border: 1px solid #4e4ffa;;
+    color:#4e4ffa;
+    font-size: 18px;
+
+}
+
+.btn0:hover {
+    background-color:#4e4ffa;;
+    color: #fff;
+}
+
+
+.Gal {
+    width: 1200px ;
+    margin:  0 auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #fff;
+
+    @include screen-max-width-1200{
+        width: 100%;
+        flex-wrap: wrap;
+      }
+    
+  
+
+}
+
+.product {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    height: 400px;
+
+
+.imggg{
+    width: 100%;
+    height: 150px;
+    img{
+        width: 100%;
+    }
+}
+}
+
+.product-name {
+    font-size: 20px;
+    font-weight: 400;
+    color: #4e4ffa;;
+    margin: 15px 0;
+}
+
+.ingrediets {
+    color: #626364;
+    line-height: 1.8;
+    margin-bottom: 15px;
+
+}
+
+.price {
+    font-size: 1.25rem;
+    color: #4e4ffa;;
+    margin-bottom: 40px;
+}
+
+
+.title-part{
+    font-family: $Frozen;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    h2{
+        margin: 10px 0;
+        font-size: 40px;
+        font-weight: 800;
+        color: #444a57;
+    }
+    .line{
+        width: 100px;
+        height: 2px;
+        background-color: blue;
+        border-radius: 10px;
+        margin: 20px 0;
+    }
+
+  }

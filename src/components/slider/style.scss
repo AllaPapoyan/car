@@ -1,0 +1,181 @@
+@import "../../assets/style/variabless";
+@import "../../assets/style/fonts";
+@import "../../assets/style/mixin";
+
+
+
+.slider-cont{
+    background-color: #f8f9fb;
+    width: 100%  ;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+   flex-direction: column;
+   overflow: hidden;
+   z-index: -1;
+   position: relative;
+   
+
+.title-part{
+    font-family: $Frozen;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    h2{
+        margin: 10px 0;
+        font-size: 40px;
+        font-weight: 800;
+        color: #444a57;
+    }
+    .line{
+        width: 100px;
+        height: 2px;
+        background-color: blue;
+        border-radius: 10px;
+        margin: 20px 0;
+    }
+
+  }
+
+
+  .slid {
+    width: 1200px;
+    margin: 0 auto;
+    height: 50vh;
+    display: flex;
+    background-color: #f8f9fb;
+    border: 1px solid black;
+    align-items: center;
+  
+
+   
+
+
+    @include screen-max-width-1200{
+      width: 90%;
+      // font-size: 30px;
+      .img-div{
+        width: 45%;
+        img{
+          width: 100%;
+        }
+      }
+
+  }
+
+  @include screen-max-width-576{
+    .img-div{
+      display: none;
+    }
+   
+  }
+
+
+
+ 
+  
+  .img-div{
+    width: 45%;
+    padding: 20px;
+        img{
+          width: 100%;
+        }
+  }
+.slid-cover{
+    width: 50%;
+    padding: 40px;
+    .slid-title{
+        font-size: 30px;
+        color: #444a57;
+        margin-bottom: 20px; 
+        
+         
+    }
+    .slid-desc{
+        color: #818998;
+        font-size: 16px;
+        line-height: 1.8;
+        text-transform: initial;
+    }
+
+    .slid-btn{
+      margin-top: 10px;
+      padding: 10px 20px;
+      border:none;
+      background-color:#4e4ffa;
+      font-size: 14px;
+      color: #f8f9fb;
+    }
+    
+
+    @include screen-max-width-767{
+      padding: 20PX;
+        .slid-title{
+          font-size: 20px;
+        }
+        .slid-desc{
+          font-size: 14PX;
+          line-height: 1.2;
+        }
+    }
+
+    @include screen-max-width-576{
+      width: 100%;
+    }
+    
+    }
+
+
+   
+   
+   
+}
+
+
+    
+  }
+
+// .slick-slider{
+  
+//   width: 100%;
+//   .slick-dots{
+//     // position: absolute;
+//     // top: 100%;
+
+//     li{
+//       button{
+//         &:before{
+//           content: "";
+//           width: 12px;
+//           height: 12px;
+//           border: 1.5px solid #4e4ffa;
+//         }
+//       }
+//     }
+//     .slick-active{
+//       margin: 0 5px;
+//       button{
+
+//         &:before{
+//           content: "";
+//           width: 25px;
+//           background-color: white;
+//           transition: 0.5s;
+
+//         }
+//       }
+//     }
+
+//   }
+
+
+// }
+
+
+
+
+
+

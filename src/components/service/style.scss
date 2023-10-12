@@ -1,0 +1,65 @@
+@import "../../assets/style/variabless";
+@import "../../assets/style/fonts";
+@import "../../assets/style/mixin";
+
+.service-container{
+    padding:180px 20px;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+
+    @include screen-max-width-1200{
+        width: 100%;
+      }
+      @include screen-max-width-991{
+        justify-content: inherit;
+        flex-wrap: wrap;
+        gap: 40px;
+      }
+      @include screen-max-width-767{
+        justify-content: center;
+      }
+.servic{
+    width: 350px;
+    height: 350px;
+    border: 1px solid #a3a3a3d4;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    color: #444a57;
+    padding: 20px;
+    img{
+        width: 100px;
+    }
+    h3{
+        font-family:  $Frozen;
+    }
+    .line{
+        width: 20px;
+        height: 3px;
+        border-radius: 25px;
+        background-color:rgba(37, 37, 246, 0.881);;
+    }
+
+
+    @include screen-max-width-1200{
+        width: 360px;
+      }
+
+      @include screen-max-width-576{
+        width: 300px;
+      }
+
+}
+:hover{
+    background-color: rgba(37, 37, 246, 0.881);
+    color: aliceblue;
+    .line{
+        background-color: aliceblue;
+    }
+}
+}

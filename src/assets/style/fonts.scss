@@ -1,0 +1,24 @@
+// FONT FAMILY NAME
+$Frozen :'Forzan-Light';
+$Black :'Inter-Black';
+$Bold  :'Inter-Bold';
+$ExtraBold:'Inter-ExtraBold';
+$ExtraLight:'Inter-ExtraLight';
+$Light:'Inter-Light';
+$Medium:'Inter-Medium';
+$Regular:'Inter-Regular';
+$SemiBold:'Inter-SemiBold';
+$Thin:'Inter-Thin';
+
+
+$font-path:'../../assets/fonts/';
+$list: $Frozen,$Black,$Bold,$ExtraBold,$ExtraLight, $Light,$Medium,$Regular,$SemiBold,$Thin;
+
+@each $name in $list {
+  $src: $font-path + $name;
+
+  @font-face {
+    src: url($src + '.ttf') format('truetype');
+    font-family: $name;
+  }
+}

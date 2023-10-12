@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+.icon {
+    display               : inline-block;
+    height                : 1em;
+    width                 : 1em;
+    mask-size             : contain;
+    -webkit-mask-size     : contain;
+    mask-repeat           : no-repeat;
+    -webkit-mask-repeat   : no-repeat;
+    mask-position         : center;
+    -webkit-mask-position : center;
+    font-size             : 16px;
+    background-color      : #000;
+}
+
+.icon.group-404-icon{
+    mask-image         : url(./icons-svg/group-404.svg);
+    -webkit-mask-image : url(./icons-svg/group-404.svg);
+}
+.icon.in-icon{
+    mask-image         : url(./icons-svg/in.svg);
+    -webkit-mask-image : url(./icons-svg/in.svg);
+}
+.icon.ln-icon{
+    mask-image         : url(./icons-svg/ln.svg);
+    -webkit-mask-image : url(./icons-svg/ln.svg);
+}
+.icon.fb-icon{
+    mask-image         : url(./icons-svg/fb.svg);
+    -webkit-mask-image : url(./icons-svg/fb.svg);
+}
+.icon.up-arrow{
+    mask-image         : url(./icons-svg/Vector.svg);
+    -webkit-mask-image : url(./icons-svg/Vector.svg);
+}
+.icon.arrow-right-icon{
+    mask-image         : url(./icons-svg/arrow-right.svg);
+    -webkit-mask-image : url(./icons-svg/arrow-right.svg);
+    background-color: white;
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+
+

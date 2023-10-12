@@ -1,0 +1,82 @@
+@import "./variabless";
+@import "./mixin";
+
+
+.G-pointer {
+  cursor : pointer;
+}
+
+.G-background-cover {
+  background-repeat   : no-repeat;
+  background-position : center;
+  background-size     : cover;
+}
+
+.G-background-contain {
+  background-repeat   : no-repeat;
+  background-position : center;
+  background-size     : contain;
+}
+
+
+.G-background {
+  background-repeat   : no-repeat;
+  background-position : center;
+  background-size     : 100%;
+}
+
+.G-background-norepeat {
+  background-size     : cover;
+  background-position : center;
+  background-repeat   : no-repeat;
+}
+
+.G-background-right-50 {
+  background-repeat   : no-repeat;
+  background-size     : 50%;
+  background-position : right;
+}
+
+::-webkit-scrollbar {
+  width            : 5px;
+  height           : 5px;
+  background-color : white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background    : $grey-55;
+  border-radius : 20px;
+}
+
+.G-hidden {
+  overflow : hidden;
+}
+
+.G-container {
+  max-width : 1600px;
+  width     : 100%;
+  padding   : 0 65px;
+  margin    : 0 auto;
+  @include screen-max-width-1200 {
+    padding : 0 15px;
+  }
+}
+
+.G-container-padding { // Added by T0n0yan
+  max-width : 1600px;
+  width     : 100%;
+  padding   : 0 65px;
+  @include screen-max-width-1200 {
+    padding : 0 15px;
+  }
+}
+
+
+.G-color-dark { //added by me
+  color : #1a1a1a;
+}
+
+.G-color-light { //added by me
+  color : #FFFFFF;
+}
